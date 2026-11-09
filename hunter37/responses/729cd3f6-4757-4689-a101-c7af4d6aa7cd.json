@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "provider": "Jev-Style",
+  "result": {
+    "model": "jev-style-2b-decision-v4",
+    "answers": {
+      "seller_role": {
+        "type": "choice",
+        "choice": "other_vehicle_or_item",
+        "confidence": 0.14266543799404854,
+        "probabilities": {
+          "selling_item": 0.2636071377281722,
+          "buyer_wanted": 0.10023779489911765,
+          "repair_service": 0.12264183361566418,
+          "bundle": 0.14581310497173866,
+          "other_vehicle_or_item": 0.28555453166170713,
+          "unclear": 0.08214559712360021
+        }
+      },
+      "is_target_part": {
+        "type": "noul",
+        "noul": 0.4613822006673751
+      },
+      "is_single_item": {
+        "type": "noul",
+        "noul": 0.29681939910171456
+      },
+      "is_real_sale": {
+        "type": "noul",
+        "noul": 0.23951455204020575
+      },
+      "price_is_suspicious": {
+        "type": "noul",
+        "noul": 0.7911337392221963
+      },
+      "listing_quality": {
+        "type": "score",
+        "score": 1.9448928114882713,
+        "confidence": 0.2823704003246187,
+        "legend": {
+          "0": "۰: آگهی نامرتبط، خریدار، خدمات یا کاملاً مبهم.",
+          "1": "۱: اطلاعات بسیار ناقص و احتمال خطای زیاد.",
+          "2": "۲: تا حدی مرتبط اما بعضی جزئیات مهم روشن نیست.",
+          "3": "۳: فروش قطعه هدف برای پراید، تعداد و قیمت نسبتاً روشن است.",
+          "4": "۴: آگهی روشن، مشخص، تک‌قلمی و دارای توضیحات کافی و معتبر است."
+        },
+        "probabilities": {
+          "0": 0.1699546184120436,
+          "1": 0.1182221172370059,
+          "2": 0.36475675630091897,
+          "3": 0.2911088505506985,
+          "4": 0.055957657499332965
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1717,
+      "state_tokens": 938,
+      "output_tokens": 0
+    },
+    "latency_ms": 998.9,
+    "timing": {
+      "total_ms": 998.9
+    },
+    "backend": "gguf"
+  },
+  "request_id": "729cd3f6-4757-4689-a101-c7af4d6aa7cd",
+  "completed_at": 1794240538
+}
