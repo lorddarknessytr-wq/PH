@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "provider": "Jev-Style",
+  "result": {
+    "model": "jev-style-2b-decision-v4",
+    "answers": {
+      "seller_role": {
+        "type": "choice",
+        "choice": "buyer_wanted",
+        "confidence": 0.620020885349199,
+        "probabilities": {
+          "selling_item": 0.08647704449387045,
+          "buyer_wanted": 0.6833507377909992,
+          "repair_service": 0.046818944308327594,
+          "bundle": 0.030045544445181382,
+          "other_vehicle_or_item": 0.05801488451046728,
+          "unclear": 0.09529284445115413
+        }
+      },
+      "is_target_part": {
+        "type": "noul",
+        "noul": 0.5020982120271954
+      },
+      "is_single_item": {
+        "type": "noul",
+        "noul": 0.4402561215468977
+      },
+      "is_real_sale": {
+        "type": "noul",
+        "noul": 0.11904246977405544
+      },
+      "price_is_suspicious": {
+        "type": "noul",
+        "noul": 0.7321938724553273
+      },
+      "listing_quality": {
+        "type": "score",
+        "score": 1.2133877713713515,
+        "confidence": 0.0,
+        "legend": {
+          "0": "۰: آگهی نامرتبط، خریدار، خدمات یا کاملاً مبهم.",
+          "1": "۱: اطلاعات بسیار ناقص و احتمال خطای زیاد.",
+          "2": "۲: تا حدی مرتبط اما بعضی جزئیات مهم روشن نیست.",
+          "3": "۳: فروش قطعه هدف برای پراید، تعداد و قیمت نسبتاً روشن است.",
+          "4": "۴: آگهی روشن، مشخص، تک‌قلمی و دارای توضیحات کافی و معتبر است."
+        },
+        "probabilities": {
+          "0": 0.4451326333451051,
+          "1": 0.11228266115150412,
+          "2": 0.26353570246908264,
+          "3": 0.14216230685555067,
+          "4": 0.036886696178757505
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1650,
+      "state_tokens": 871,
+      "output_tokens": 0
+    },
+    "latency_ms": 965.0,
+    "timing": {
+      "total_ms": 965.0
+    },
+    "backend": "gguf"
+  },
+  "request_id": "177ed384-f196-4f0a-95ba-7a17207a3284",
+  "completed_at": 1794240500
+}
