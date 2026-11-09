@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "provider": "Jev-Style",
+  "result": {
+    "model": "jev-style-2b-decision-v4",
+    "answers": {
+      "seller_role": {
+        "type": "choice",
+        "choice": "selling_item",
+        "confidence": 0.22736667344833988,
+        "probabilities": {
+          "selling_item": 0.35613889454028325,
+          "buyer_wanted": 0.07239161027346908,
+          "repair_service": 0.044470128194640336,
+          "bundle": 0.2595537332845821,
+          "other_vehicle_or_item": 0.1357551410717206,
+          "unclear": 0.13169049263530475
+        }
+      },
+      "is_target_part": {
+        "type": "noul",
+        "noul": 0.35484447645961215
+      },
+      "is_single_item": {
+        "type": "noul",
+        "noul": 0.2702942425322518
+      },
+      "is_real_sale": {
+        "type": "noul",
+        "noul": 0.3766732055665692
+      },
+      "price_is_suspicious": {
+        "type": "noul",
+        "noul": 0.7632753693638659
+      },
+      "listing_quality": {
+        "type": "score",
+        "score": 2.1990159872702835,
+        "confidence": 0.3493425458501461,
+        "legend": {
+          "0": "۰: آگهی نامرتبط، خریدار، خدمات یا کاملاً مبهم.",
+          "1": "۱: اطلاعات بسیار ناقص و احتمال خطای زیاد.",
+          "2": "۲: تا حدی مرتبط اما بعضی جزئیات مهم روشن نیست.",
+          "3": "۳: فروش قطعه هدف برای پراید، تعداد و قیمت نسبتاً روشن است.",
+          "4": "۴: آگهی روشن، مشخص، تک‌قلمی و دارای توضیحات کافی و معتبر است."
+        },
+        "probabilities": {
+          "0": 0.0891965944261116,
+          "1": 0.11249329000254743,
+          "2": 0.39306898632971765,
+          "3": 0.3205797923581927,
+          "4": 0.08466133688343068
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1670,
+      "state_tokens": 907,
+      "output_tokens": 0
+    },
+    "latency_ms": 991.5,
+    "timing": {
+      "total_ms": 991.5
+    },
+    "backend": "gguf"
+  },
+  "request_id": "cf4d9a67-4ee1-4bca-942d-f7173fca0c1c",
+  "completed_at": 1794240417
+}
