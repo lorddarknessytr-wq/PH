@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "provider": "Jev-Style",
+  "result": {
+    "model": "jev-style-2b-decision-v4",
+    "answers": {
+      "seller_role": {
+        "type": "choice",
+        "choice": "selling_item",
+        "confidence": 0.22015031457790935,
+        "probabilities": {
+          "selling_item": 0.3501252621482578,
+          "buyer_wanted": 0.08882853973460211,
+          "repair_service": 0.22717688861865357,
+          "bundle": 0.017477793622514875,
+          "other_vehicle_or_item": 0.13339737389247747,
+          "unclear": 0.18299414198349423
+        }
+      },
+      "is_target_part": {
+        "type": "noul",
+        "noul": 0.28451479401960067
+      },
+      "is_single_item": {
+        "type": "noul",
+        "noul": 0.6609652013374453
+      },
+      "is_real_sale": {
+        "type": "noul",
+        "noul": 0.16171282481418003
+      },
+      "price_is_suspicious": {
+        "type": "noul",
+        "noul": 0.7007473418486426
+      },
+      "listing_quality": {
+        "type": "score",
+        "score": 1.4868406274136077,
+        "confidence": 0.25755640203202335,
+        "legend": {
+          "0": "۰: آگهی نامرتبط، خریدار، خدمات یا کاملاً مبهم.",
+          "1": "۱: اطلاعات بسیار ناقص و احتمال خطای زیاد.",
+          "2": "۲: تا حدی مرتبط اما بعضی جزئیات مهم روشن نیست.",
+          "3": "۳: فروش قطعه هدف برای پراید، تعداد و قیمت نسبتاً روشن است.",
+          "4": "۴: آگهی روشن، مشخص، تک‌قلمی و دارای توضیحات کافی و معتبر است."
+        },
+        "probabilities": {
+          "0": 0.23457436342715915,
+          "1": 0.2328971182196639,
+          "2": 0.36408247866251525,
+          "3": 0.14800560689373374,
+          "4": 0.020440432796928008
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1728,
+      "state_tokens": 965,
+      "output_tokens": 0
+    },
+    "latency_ms": 1013.0,
+    "timing": {
+      "total_ms": 1013.0
+    },
+    "backend": "gguf"
+  },
+  "request_id": "33cd811f-ebb8-4f1c-9087-9a2982f2f118",
+  "completed_at": 1794240278
+}
