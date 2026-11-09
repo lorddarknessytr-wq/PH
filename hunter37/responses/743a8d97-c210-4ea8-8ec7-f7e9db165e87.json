@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "provider": "Jev-Style",
+  "result": {
+    "model": "jev-style-2b-decision-v4",
+    "answers": {
+      "seller_role": {
+        "type": "choice",
+        "choice": "bundle",
+        "confidence": 0.17965796617543867,
+        "probabilities": {
+          "selling_item": 0.25907380679679626,
+          "buyer_wanted": 0.0573693826497866,
+          "repair_service": 0.04272234508996743,
+          "bundle": 0.3163816384795322,
+          "other_vehicle_or_item": 0.1595674117269488,
+          "unclear": 0.1648854152569687
+        }
+      },
+      "is_target_part": {
+        "type": "noul",
+        "noul": 0.5432065145669096
+      },
+      "is_single_item": {
+        "type": "noul",
+        "noul": 0.3701757185449695
+      },
+      "is_real_sale": {
+        "type": "noul",
+        "noul": 0.24390384603850931
+      },
+      "price_is_suspicious": {
+        "type": "noul",
+        "noul": 0.7165616218687331
+      },
+      "listing_quality": {
+        "type": "score",
+        "score": 1.7547298880945723,
+        "confidence": 0.3691463375996267,
+        "legend": {
+          "0": "۰: آگهی نامرتبط، خریدار، خدمات یا کاملاً مبهم.",
+          "1": "۱: اطلاعات بسیار ناقص و احتمال خطای زیاد.",
+          "2": "۲: تا حدی مرتبط اما بعضی جزئیات مهم روشن نیست.",
+          "3": "۳: فروش قطعه هدف برای پراید، تعداد و قیمت نسبتاً روشن است.",
+          "4": "۴: آگهی روشن، مشخص، تک‌قلمی و دارای توضیحات کافی و معتبر است."
+        },
+        "probabilities": {
+          "0": 0.13566958866919224,
+          "1": 0.22980807605455333,
+          "2": 0.40107099019320874,
+          "3": 0.21102554867858145,
+          "4": 0.022425796404464314
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1618,
+      "state_tokens": 839,
+      "output_tokens": 0
+    },
+    "latency_ms": 941.9,
+    "timing": {
+      "total_ms": 941.9
+    },
+    "backend": "gguf"
+  },
+  "request_id": "743a8d97-c210-4ea8-8ec7-f7e9db165e87",
+  "completed_at": 1794240442
+}
